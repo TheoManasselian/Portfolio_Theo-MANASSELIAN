@@ -1,0 +1,348 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>CV - Théo MANASSELIAN</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="../images/Flavicon.png" type="image/x-icon">
+
+  <style>
+/* ESET + ENVIRONNEMENT GLOBAL */
+*{ box-sizing:border-box; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+html,body{ height:100%; margin:0; padding:0; }
+html,body{ background:#eaeff2; color:#111; font-family:Arial, Helvetica, sans-serif; }
+
+/* CONTENEURS STRUCTURELS */
+#container{ position:absolute; top:0; left:0; width:100%; height:100%; margin:0; padding:0; }
+#header{ width:100%; height:0; margin:0; padding:0; border:0; }
+#outer{ margin:0 auto; width:100%; height:100%; }
+#inner{
+  margin:0; min-width:480px; height:100%; background:transparent; text-align:left;
+  display:flex; justify-content:center; align-items:flex-start; /* COLLE EN HAUT */
+  padding:0;
+}
+
+/* PAGE A4 STRICTE */
+#page{
+  width:210mm; height:310mm; background:#fff;
+  box-shadow:0 0 20px rgba(0,0,0,.15);
+  overflow:hidden; display:flex; flex-direction:column;
+}
+
+/* EN-TÊTE (photo centrée / titre centré) */
+#page-header{
+  /* CHANGEMENT: on force une vraie hauteur de bandeau pour "respirer" */
+  display:grid;
+  grid-template-columns: 74mm 1fr;
+  align-items:center;
+  min-height: 44mm;                 /* + d'espace vertical */
+}
+
+#head-left{
+  width:100%; background:#3a5d74; padding:0;
+  display:grid; place-items:center; transform: translateZ(0);
+  box-shadow: inset -1px 0 0 #dfe9f0;
+  height: 100%;                      /* s'étire sur la hauteur du header */
+}
+
+#photo{
+  width:35mm; height:35mm; border-radius:25%;
+  background:url("images/PDP.png") center/cover no-repeat;
+  border:3px solid #ffffff;
+}
+
+#head-right{
+  flex:1; background:#dfe9f0;
+  /* CHANGEMENT: on ajoute du padding pour donner de l'air autour du titre */
+  padding: 6mm 11mm;                /* était 0 + .head-center non utilisé */
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  text-align:center;
+  border-radius: 10%;
+}
+#head-right h1{ margin:0 0 4px 0; font-size:20px; letter-spacing:.3px; color:#233b4a; font-weight:700; }
+#head-right h2{ margin:0; font-size:12.6px; color:#2a4d63; font-weight:600; padding-top: 1em;}
+
+/* CORPS 2 COLONNES */
+#content{
+  flex:1; display:flex; width:100%;
+  /* CHANGEMENT: enlever la marge blanche interne du bas */
+  padding-bottom:0;                  /* était 6mm -> cause de la barre blanche */
+  background:#ffffff;
+}
+
+/* Panneaux (pas de scroll interne en A4 strict) */
+#lpane, #rpane{
+  display:inline-block; height:100%; margin:0; min-width:120px;
+  background:#ffffff; text-align:left; overflow:hidden;
+}
+
+/* --- Panneau gauche (fixe) --- */
+#lpane{
+  width:74mm; flex:0 0 74mm;
+  background:#3a5d74; color:#ffffff;
+  border-right:0; box-shadow: inset -1px 0 0 #ffffff;
+  padding:8mm 9mm 8mm 11mm;
+  transform: translateZ(0);
+}
+#lpane section{ margin:0 0 6mm 0; ;}
+#lpane h3{
+  margin:0 0 4mm 0; font-size:12px; font-weight:800; letter-spacing:.6px;
+  color:#ffffff; border-bottom:2px solid #ffffff; padding-bottom:2px;
+}
+/* Texte compact */
+#lpane p, #lpane a, #lpane li{ font-size:11.5px; line-height:1.32; }
+#lpane p{ margin:2px 0; color:#e9f3fb; }
+#lpane ul{ margin:0; padding-left:15px; }
+#lpane li{ margin:1.8px 0; }
+#lpane a{
+  color:#ffffff; text-decoration:none;
+  display:inline-block; max-width:100%;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+
+#coordonées{
+  padding-top: 2%;
+}
+
+/* Icônes */
+.icon{ width:14px; height:14px; display:inline-block;
+  background-size:contain; background-repeat:no-repeat;
+  filter:brightness(0) invert(1); margin-right:8px; vertical-align:-2px;
+  padding-top: 1em; }
+.icon.phone { background-image:url("images/telephone.png"); }
+.icon.mail { background-image:url("images/email.png"); padding-top: 1.5em;}
+.icon.location { background-image:url("images/maps-and-flags.png"); }
+.icon.web { background-image:url("images/internet.png"); padding-top: 1.5em;}
+.icon.linkedin { background-image:url("images/linkedin.png"); padding-top: 1.5em;}
+.icon.github { background-image:url("images/github.png"); padding-top: 1.5em;}
+
+/* --- Panneau droit (flexible) --- */
+#rpane{
+  flex:1; width:auto;
+  /* CHANGEMENT: on garde du confort mais sans ajouter d'espace "global bas" */
+  padding:9mm 15mm 8mm 11mm; background:#fff;
+}
+#rpane section{ margin:0 0 8mm 0; }
+#rpane h3{
+  margin:0 0 4mm 0; font-size:12px; font-weight:800; letter-spacing:.6px;
+  color:#2a4d63; border-bottom:2px solid #2a4d63; padding-bottom:2px;
+}
+#rpane .block{ margin:0 0 6mm 0; }
+#rpane h4{ margin:0 0 1mm 0; font-size:13.2px; color:#000; font-weight:700; }
+#rpane p.meta{ margin:0 0 2mm 0; color:#666; font-size:12.2px; }
+#rpane p{ margin:0 0 2mm 0; color:#000000; font-size:12.2px; }
+#rpane ul{ padding-left:16px; margin:3px 0 0 0; }
+#rpane li{ margin:2px 0; font-size:12.2px; }
+
+/* IMPRESSION (PDF)*/
+@page{ size:A4; margin:0; }
+
+@media print{
+  html,body{ height:auto; background:#fff; }
+  #inner{ padding:0; }
+  #page{ width:210mm; height:297mm; box-shadow:none; }
+  a{ color:#000; text-decoration:none; }
+}
+
+  </style>
+
+</head>
+<body>
+
+<!-- Conteneur global comme dans ta forme -->
+<div id="container">
+
+  <!-- Bandeau d’en-tête (barre supérieure si tu veux y mettre quelque chose) -->
+  <div id="header">
+    <!-- Tu peux laisser vide ou mettre un logo/texte -->
+  </div>
+
+  <!-- Outer/Inner pour centrer et contenir la page A4 -->
+  <div id="outer">
+    <div id="inner">
+
+      <!-- La page A4 stricte -->
+      <div id="page">
+
+        <!-- EN-TÊTE du CV (photo à gauche + titre à droite) -->
+        <div id="page-header">
+          <div id="head-left">
+            <div id="photo" aria-hidden="true"></div>
+          </div>
+          <div id="head-right">
+            <h1>THÉO MANASSELIAN</h1>
+            <h2><u>Recherche d'alternance (1 an - renouvelable) - Technicien réseau</u></h2>
+            <h2><u>Sept. 2026 - Août 2027  -  2-3 semaines entreprise - 1 semaine école</u></h2>
+          </div>
+        </div>
+
+        <!-- Corps à deux colonnes -->
+        <div id="content">
+
+          <!-- Colonne gauche -->
+          <div id="lpane">
+
+            <section id="coordonées">
+              <h3>COORDONNÉES</h3>
+
+              <p><span class="icon phone"></span><span>07 68 23 34 22</span></p>
+              <p><span class="icon location"></span><span>Savigny-sur-Orge (91600), France</span></p>
+              <p><span class="icon mail"></span><a href="mailto:theo.manasselian.pro@gmail.com">theo.manasselian.pro@gmail.com</a></p>
+              <p><span class="icon linkedin"></span><a href="https://www.linkedin.com/in/th%C3%A9o-manasselian" target="_blank" rel="noopener">linkedin.com/in/theo-manasselian</a></p>
+              <p><span class="icon github"></span><a href="https://github.com/TheoManasselian" target="_blank" rel="noopener">github.com/theo-manasselian</a></p>
+              <!-- <p><span class="icon web"></span><a href="https://www.theo-manasselian.com" target="_blank" rel="noopener">theo-manasselian.com</a></p> -->
+            </section>
+
+            <section style="padding-top: 3%;">
+              
+              <h3>LANGUES</h3>
+              <ul>
+                <li>Anglais : B2</li>
+                <li>Espagnol : B1</li>
+              </ul>
+            </section>
+
+            <section id="competences" style="padding-top: 3%;">
+              <h3>COMPÉTENCES</h3>
+              <ul>
+                <li><strong><u>Réseaux & Systèmes :</u></strong></li>
+                <ul>
+                    <li>Cisco Packet Tracer</li>
+                    <li>Réseaux TCP/IP, DNS, DHCP</li>
+                    <li>Windows Server & Active Directory</li>
+                    <li>Virtualisation (VM)</li>
+                </ul>
+                <li style="padding-top: 7%;"><strong><u>Programmation :</u></strong></li>
+                <ul>
+                    <li>Git</li>
+                    <li>Python / MySQL</li>
+                    <li>JSON / JavaScript / HTML / CSS</li>
+                </ul>
+                <li style="padding-top: 7%;"><strong><u>Administratives :</u></strong></li>
+                <ul>
+                    <li>Suite Office</li>
+                    <li>Canva</li>
+                </ul>
+                <li style="padding-top: 7%;"><strong><u>Humaines :</u></strong></li>
+                <ul>
+                    <li>Travail d'équipe, organisation, rigueur</li>
+                </ul>
+              </ul>
+            </section>
+
+            <section style="padding-top: 3%;">
+              <h3>CENTRES D'INTÉRÊT</h3>
+              <ul>
+                <li>Programmation : WEB / Jeux-vidéos</li>
+                <li>Réseaux informatiques : Simulations Packet Tracer</li>
+                <li>Sport : Parkour</li>
+                <li>Lecture : Romans / Nouvelles / Mangas</li>
+                <li>Musique : Métal / Rock / POP / Classique</li>
+                <li>Jeux vidéo : RPG / JRPG</li>
+                <li>Numismatique</li>
+              </ul>
+            </section>
+          </div>
+
+          <!-- Colonne droite -->
+          <div id="rpane">
+
+            <section>
+              <h3>PROFIL</h3>
+              <div class="block">
+                <p style="text-indent: 3em; text-align: justify;">Actuellement étudiant en informatique à l'ESIEA, 
+                  je suis en quête d'un terrain d'apprentissage en alternance dans le domaine des réseaux et systèmes. 
+                  J'apporte une bonne base technique (Packet Tracer, Windows Server, virtualisation, services réseau) 
+                  ainsi qu'une forte motivation pour apprendre, m'adapter et participer activement aux missions de l'équipe.</p>
+              </div>
+              
+            </section>
+
+            <section>
+              <h3>FORMATION</h3>
+              <div class="block">
+                <h4>Programme Expert en Informatique (Alternance)</h4>
+                <p class="meta">ESIEA - Ivry-sur-Seine · Sept. 2025 - Juil. 2028</p>
+                <ul>
+                  <li>Administrateur d'infrastructures sécurisées - Bac+3 (RNCP 6)</li>
+                  <p class="meta">Prévu juillet 2028 - alternance a partir de la 2e année</p>
+                  <li>Technicien supérieur systèmes et réseaux - Bac+2 (RNCP 5)</li>
+                  <p class="meta">Prévu juillet 2027 - avec une première année d'alternance en 2e année</p>
+                </ul>
+              </div>
+
+              <div class="block">
+                <h4>Certification Cambridge - Anglais (B1)</h4>
+                <p class="meta">LPO Monges - Savigny-sur-Orge · 2025</p>
+              </div>
+            </section>
+
+            <section>
+              <h3>EXPÉRIENCES &amp; PROJETS</h3>
+
+              <div class="block">
+                <h4>Projet de formation humaine - Chef de projet</h4>
+                <p class="meta">ESIEA - Ivry-sur-Seine · 2025 - 2026</p>
+                <ul>
+                  <li>Coordination d'un projet en équipe</li>
+                  <li>Communication et travail collaboratif</li>
+                  <li>Organisation des tâches et suivi de l'avancement</li>
+                </ul>
+              </div>
+
+              <div class="block">
+                <h4>Projet informatique - Labyrinthe procédural</h4>
+                <p class="meta">ESIEA - Ivry-sur-Seine · 2025 - 2026</p>
+                <ul>
+                  <li>Conception de logique algorithmique</li>
+                  <li>Développement en JavaScript, HTML, CSS</li>
+                  <li>Tests et amélioration du fonctionnement</li>
+                </ul>
+              </div>
+
+              <div class="block">
+                <h4>Projet personnel - Infrastructure - Réseau & Active Directory</h4>
+                <p class="meta">2025 - 2026</p>
+                <ul>
+                  <li>Double réseau Packet Tracer</li>
+                  <ul>
+                    <li>Adressage IP via : réseau 1 → serveur DHCP; réseau 2 → routeur.</li>
+                    <li>Segmentation du réseau 2 en 4 VLANs selon les services.</li>
+                    <li>Mise en place d'un serveur DNS central utilisé par tout le réseau.</li>
+                  </ul>
+                  <li>Windows Server & Active Directory</li>
+                  <ul>
+                    <li>Déploiement d'une VM Windows Server (AD DS) et d'une VM Windows 10 intégrée au domaine.</li>
+                    <li>AD organisé en OU par VLAN, groupes de sécurité et objets PC.</li>
+                    <li>Configuration des droits NTFS et des partages selon les rôles.</li>
+                  </ul>
+                </ul>
+                
+              </div>
+
+              <div class="block">
+                <h4>Stage d'observation - CONSERTO (ESN)</h4>
+                <p class="meta">2022 · 1 semaine</p>
+                <ul>
+                  <li>Découverte des métiers de l'informatique</li>
+                  <li>Observation d'environnements professionnels IT</li>
+                </ul>
+                <p style="text-align:right; color: gray; font-size: 0.8em; margin-top: 10px;">CV réalisé en HTML</p>
+              </div>
+
+                
+
+            </section>
+          </div>
+
+        </div><!-- /#content -->
+
+      </div><!-- /#page -->
+    </div><!-- /#inner -->
+  </div><!-- /#outer -->
+
+</div><!-- /#container -->
+
+</body>
+</html>
