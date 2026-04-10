@@ -3,7 +3,7 @@ window.detailData['projet-web'] = {
   title: 'Projet web : IsNoTaTALAN',
   html: `
     <div class="detail-block">
-      <div class="detail-block-img" id="detail-img-TALAN"><img src="../images/Camembert_TALAN.png" alt="Répartition du projet"></div>
+      <div class="detail-block-img" id="detail-img-TALAN"><img src="./images/Camembert_TALAN.png" alt="Répartition du projet"></div>
       <div class="detail-block-text">
       <h4>Technologies & Outils</h4>
         <ul>
@@ -15,7 +15,7 @@ window.detailData['projet-web'] = {
     </div>
 
     <div class="detail-block reverse">
-      <div class="detail-block-img"><img src="../images/TALAN_1.png" alt="IsNoTaTALAN - Sélection personnage"></div>
+      <div class="detail-block-img"><img src="./images/TALAN_1.png" alt="IsNoTaTALAN - Sélection personnage"></div>
       <div class="detail-block-text">
         <h4>Présentation du projet</h4>
         <p>Premier projet informatique réalisé à l'ESIEA avec l'équipe TALAN. Après un semestre de travail, nous avons développé un jeu 2D entièrement réalisé en CSS, JavaScript et HTML.</p>
@@ -24,7 +24,7 @@ window.detailData['projet-web'] = {
     </div>
 
     <div class="detail-block">
-      <div class="detail-block-img"><img src="../images/TALAN_2.png" alt="IsNoTaTALAN - Gameplay"></div>
+      <div class="detail-block-img"><img src="./images/TALAN_2.png" alt="IsNoTaTALAN - Gameplay"></div>
       <div class="detail-block-text">
         <h4>Le jeu : un labyrinthe procédural</h4>
         <p>Avec les membres de l'équipe, nous avons conçu un jeu de labyrinthe procédural offrant une expérience différente à chaque partie :</p>

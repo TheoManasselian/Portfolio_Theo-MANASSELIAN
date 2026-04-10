@@ -3,7 +3,7 @@ window.detailData['projet-reseau'] = {
   title: 'Projet Virtualisation – Réseau Packet Tracer – VM Windows Server',
   html: `
     <div class="detail-block">
-      <div class="detail-block-img"id="detail-img-Packet-Tracer—VM"><img src="../images/Camembert_Packet-Tracer—VM.png" alt="Répartition du projet"></div>
+      <div class="detail-block-img"id="detail-img-Packet-Tracer—VM"><img src="./images/Camembert_Packet-Tracer—VM.png" alt="Répartition du projet"></div>
       <div class="detail-block-text">
         <h4>Technologies & Outils</h4>
         <ul>
@@ -18,7 +18,7 @@ window.detailData['projet-reseau'] = {
     </div>
 
     <div class="detail-block reverse">
-      <div class="detail-block-img"><img src="../images/Cisco_1.png" alt="Packet Tracer Network"></div>
+      <div class="detail-block-img"><img src="./images/Cisco_1.png" alt="Packet Tracer Network"></div>
       <div class="detail-block-text">
         <h4>1. Réseau Packet Tracer</h4>
         <p>Mise en place d'une infrastructure réseau complète simulée avec Cisco Packet Tracer :</p>

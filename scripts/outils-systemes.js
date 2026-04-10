@@ -9,9 +9,9 @@ window.detailData['outils-systemes'] = {
         <div class="detail-section">\
           <h4>Systèmes d\'exploitation</h4>\
           <div class="skills-row">\
-            <div class="skill-item"><div class="skill-icon"><img src="../images/Windows.png" alt="Windows"></div></div>\
-            <div class="skill-item"><div class="skill-icon"><img src="../images/Windows-Server.png" alt="Windows Server"></div></div>\
-            <div class="skill-item"><div class="skill-icon"><img src="../images/Linux.png" alt="Linux"></div></div>\
+            <div class="skill-item"><div class="skill-icon"><img src="./images/Windows.png" alt="Windows"></div></div>\
+            <div class="skill-item"><div class="skill-icon"><img src="./images/Windows-Server.png" alt="Windows Server"></div></div>\
+            <div class="skill-item"><div class="skill-icon"><img src="./images/Linux.png" alt="Linux"></div></div>\
           </div>\
           <ul>\
             <li><strong>Windows</strong> — Système d\'exploitation principal pour les utilisateurs finaux.</li>\
@@ -22,9 +22,9 @@ window.detailData['outils-systemes'] = {
         <div class="detail-section">\
           <h4>Virtualisation</h4>\
           <div class="skills-row">\
-            <div class="skill-item"><div class="skill-icon"><img src="../images/Vmware.png" alt="VMware"></div></div>\
-            <div class="skill-item"><div class="skill-icon"><img src="../images/VirtualBox.png" alt="VirtualBox"></div></div>\
-            <div class="skill-item"><div class="skill-icon"><img src="../images/Proxmox.png" alt="Proxmox"></div></div>\
+            <div class="skill-item"><div class="skill-icon"><img src="./images/Vmware.png" alt="VMware"></div></div>\
+            <div class="skill-item"><div class="skill-icon"><img src="./images/VirtualBox.png" alt="VirtualBox"></div></div>\
+            <div class="skill-item"><div class="skill-icon"><img src="./images/Proxmox.png" alt="Proxmox"></div></div>\
           </div>\
           <ul>\
             <li><strong>VMware</strong> — Création et gestion de machines virtuelles, snapshots, réseaux virtuels.</li>\
@@ -35,8 +35,8 @@ window.detailData['outils-systemes'] = {
         <div class="detail-section">\
           <h4>Serveurs locaux</h4>\
           <div class="skills-row">\
-            <div class="skill-item"><div class="skill-icon"><img src="../images/XAMPP.webp" alt="XAMPP"></div></div>\
-            <div class="skill-item"><div class="skill-icon"><img src="../images/WAMP.png" alt="WAMP"></div></div>\
+            <div class="skill-item"><div class="skill-icon"><img src="./images/XAMPP.webp" alt="XAMPP"></div></div>\
+            <div class="skill-item"><div class="skill-icon"><img src="./images/WAMP.png" alt="WAMP"></div></div>\
           </div>\
           <ul>\
             <li><strong>XAMPP</strong> — Environnement multi-plateforme (Apache, MariaDB, PHP, Perl).</li>\
@@ -46,8 +46,8 @@ window.detailData['outils-systemes'] = {
         <div class="detail-section">\
           <h4>Simulation réseau</h4>\
           <div class="skills-row">\
-            <div class="skill-item"><div class="skill-icon"><img src="../images/Cisco-Packet-Tracer.png" alt="Cisco Packet Tracer"></div></div>\
-            <div class="skill-item"><div class="skill-icon"><img src="../images/GNS3.png" alt="GNS3"></div></div>\
+            <div class="skill-item"><div class="skill-icon"><img src="./images/Cisco-Packet-Tracer.png" alt="Cisco Packet Tracer"></div></div>\
+            <div class="skill-item"><div class="skill-icon"><img src="./images/GNS3.png" alt="GNS3"></div></div>\
           </div>\
           <ul>\
             <li><strong>Cisco Packet Tracer</strong> — Simulation de réseaux, configuration de routeurs et switchs, VLANs.</li>\
@@ -57,7 +57,7 @@ window.detailData['outils-systemes'] = {
         <div class="detail-section">\
           <h4>Virtualisation</h4>\
           <div class="skills-row">\
-            <div class="skill-item"><div class="skill-icon"><img src="../images/Wireshark.png" alt="Wireshark"></div></div>\
+            <div class="skill-item"><div class="skill-icon"><img src="./images/Wireshark.png" alt="Wireshark"></div></div>\
           </div>\
           <ul>\
             <li><strong>Wireshark</strong> — Analyse de trafic réseau, déblocage de problèmes réseau.</li>\
