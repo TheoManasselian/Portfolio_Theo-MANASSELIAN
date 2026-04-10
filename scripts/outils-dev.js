@@ -9,7 +9,7 @@ window.detailData['outils-dev'] = {
         <div class="detail-section">\
           <h4>Éditeur & Versioning</h4>\
           <div class="skills-row">\
-            <div class="skill-item"><div class="skill-icon"><img src="./images/VSCode.png" alt="VSCode"></div></div>\
+            <div class="skill-item"><div class="skill-icon"><img src="./images/VScode.png" alt="VSCode"></div></div>\
             <div class="skill-item"><div class="skill-icon"><img src="./images/PyCharm.png" alt="PyCharm"></div></div>\
             <div class="skill-item"><div class="skill-icon"><img src="./images/DataSpell.png" alt="DataSpell"></div></div>\
           </div>\
