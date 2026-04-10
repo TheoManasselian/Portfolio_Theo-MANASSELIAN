@@ -22,7 +22,7 @@ window.detailData['outils-systemes'] = {
         <div class="detail-section">\
           <h4>Virtualisation</h4>\
           <div class="skills-row">\
-            <div class="skill-item"><div class="skill-icon"><img src="./images/Vmware.png" alt="VMware"></div></div>\
+            <div class="skill-item"><div class="skill-icon"><img src="./images/VMware.png" alt="VMware"></div></div>\
             <div class="skill-item"><div class="skill-icon"><img src="./images/VirtualBox.png" alt="VirtualBox"></div></div>\
             <div class="skill-item"><div class="skill-icon"><img src="./images/Proxmox.png" alt="Proxmox"></div></div>\
           </div>\
