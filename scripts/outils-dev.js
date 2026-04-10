@@ -9,9 +9,9 @@ window.detailData['outils-dev'] = {
         <div class="detail-section">\
           <h4>Éditeur & Versioning</h4>\
           <div class="skills-row">\
-            <div class="skill-item"><div class="skill-icon"><img src="../images/VSCode.png" alt="VSCode"></div></div>\
-            <div class="skill-item"><div class="skill-icon"><img src="../images/PyCharm.png" alt="PyCharm"></div></div>\
-            <div class="skill-item"><div class="skill-icon"><img src="../images/DataSpell.png" alt="DataSpell"></div></div>\
+            <div class="skill-item"><div class="skill-icon"><img src="./images/VSCode.png" alt="VSCode"></div></div>\
+            <div class="skill-item"><div class="skill-icon"><img src="./images/PyCharm.png" alt="PyCharm"></div></div>\
+            <div class="skill-item"><div class="skill-icon"><img src="./images/DataSpell.png" alt="DataSpell"></div></div>\
           </div>\
           <ul>\
             <li><strong>Visual Studio Code</strong> — Éditeur principal, extensions, débogage, terminal intégré.</li>\
@@ -22,8 +22,8 @@ window.detailData['outils-dev'] = {
         <div class="detail-section">\
           <h4>Bases de données</h4>\
           <div class="skills-row">\
-            <div class="skill-item"><div class="skill-icon"><img src="../images/MySQL.png" alt="MySQL"></div></div>\
-            <div class="skill-item"><div class="skill-icon"><img src="../images/SQLite.png" alt="SQLite"></div></div>\
+            <div class="skill-item"><div class="skill-icon"><img src="./images/MySQL.png" alt="MySQL"></div></div>\
+            <div class="skill-item"><div class="skill-icon"><img src="./images/SQLite.png" alt="SQLite"></div></div>\
           </div>\
           <ul>\
             <li><strong>MySQL</strong> — Administration de bases de données, phpMyAdmin.</li>\
@@ -33,8 +33,8 @@ window.detailData['outils-dev'] = {
         <div class="detail-section">\
           <h4>Serveurs locaux</h4>\
           <div class="skills-row">\
-            <div class="skill-item"><div class="skill-icon"><img src="../images/XAMPP.webp" alt="XAMPP"></div></div>\
-            <div class="skill-item"><div class="skill-icon"><img src="../images/WAMP.png" alt="WAMP"></div></div>\
+            <div class="skill-item"><div class="skill-icon"><img src="./images/XAMPP.webp" alt="XAMPP"></div></div>\
+            <div class="skill-item"><div class="skill-icon"><img src="./images/WAMP.png" alt="WAMP"></div></div>\
           </div>\
           <ul>\
             <li><strong>XAMPP</strong> — Environnement multi-plateforme (Apache, MariaDB, PHP, Perl).</li>\
@@ -44,7 +44,7 @@ window.detailData['outils-dev'] = {
         <div class="detail-section">\
           <h4>Serveurs locaux</h4>\
           <div class="skills-row">\
-            <div class="skill-item"><div class="skill-icon"><img src="../images/GIT.png" alt="GIT"></div></div>\
+            <div class="skill-item"><div class="skill-icon"><img src="./images/GIT.png" alt="GIT"></div></div>\
           </div>\
           <ul>\
             <li><strong>GIT</strong> — Gestion de versions, branches, merge, collaboration via GitHub.</li>\
@@ -53,7 +53,7 @@ window.detailData['outils-dev'] = {
         <div class="detail-section">\
           <h4>Serveurs locaux</h4>\
           <div class="skills-row">\
-            <div class="skill-item"><div class="skill-icon"><img src="../images/TeXworks.png" alt="TeXworks"></div></div>\
+            <div class="skill-item"><div class="skill-icon"><img src="./images/TeXworks.png" alt="TeXworks"></div></div>\
           </div>\
           <ul>\
             <li><strong>TeXworks</strong> — Éditeur de documents LaTeX.</li>\
