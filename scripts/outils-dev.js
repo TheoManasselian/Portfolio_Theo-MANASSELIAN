@@ -20,6 +20,19 @@ window.detailData['outils-dev'] = {
           </ul>\
         </div>\
         <div class="detail-section">\
+          <h4>Serveurs locaux</h4>\
+          <div class="skills-row">\
+            <div class="skill-item"><div class="skill-icon"><img src="./images/GIT.png" alt="GIT"></div></div>\
+            <div class="skill-item"><div class="skill-icon"><img src="./images/Gitlab.png" alt="GitLab"></div></div>\
+            <div class="skill-item"><div class="skill-icon"><img src="./images/GitHub-logo.png" alt="GitHub"></div></div>\
+          </div>\
+          <ul>\
+            <li><strong>GIT</strong> — Gestion de versions, branches, merge, collaboration via GitHub.</li>\
+            <li><strong>GitLab</strong> — Plateforme de gestion de versions et CI/CD.</li>\
+            <li><strong>GitHub</strong> — Plateforme de gestion de versions, collaboration, hébergement de projets open source.</li>\
+          </ul>\
+        </div>\
+        <div class="detail-section">\
           <h4>Bases de données</h4>\
           <div class="skills-row">\
             <div class="skill-item"><div class="skill-icon"><img src="./images/MySQL.png" alt="MySQL"></div></div>\
@@ -39,15 +52,6 @@ window.detailData['outils-dev'] = {
           <ul>\
             <li><strong>XAMPP</strong> — Environnement multi-plateforme (Apache, MariaDB, PHP, Perl).</li>\
             <li><strong>WAMP</strong> — Environnement de développement local Windows (Apache, MySQL, PHP).</li>\
-          </ul>\
-        </div>\
-        <div class="detail-section">\
-          <h4>Serveurs locaux</h4>\
-          <div class="skills-row">\
-            <div class="skill-item"><div class="skill-icon"><img src="./images/GIT.png" alt="GIT"></div></div>\
-          </div>\
-          <ul>\
-            <li><strong>GIT</strong> — Gestion de versions, branches, merge, collaboration via GitHub.</li>\
           </ul>\
         </div>\
         <div class="detail-section">\
