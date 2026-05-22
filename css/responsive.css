@@ -1,0 +1,47 @@
+/* =============================================================
+   responsive.css — Media queries : tablette et mobile
+   ============================================================= */
+
+/* ── TABLETTE (≤ 900px) ── */
+@media (max-width: 900px) {
+  .section-wrap { padding: 40px 28px 56px; }
+
+  /* Parcours : 1 colonne */
+  .parcours-layout { grid-template-columns: 1fr; }
+  .parcours-card   { position: static; flex-direction: row; text-align: left; flex-wrap: wrap; gap: 16px; padding: 20px; }
+  .parcours-avatar { width: 72px; height: 72px; }
+  .parcours-divider { display: none; }
+
+  /* Projets : 1 colonne */
+  .project-layout { grid-template-columns: 1fr; }
+
+  /* Détail : 1 colonne */
+  .detail-block,
+  .detail-block.reverse { grid-template-columns: 1fr; direction: ltr; }
+
+  /* Compétences : 1 colonne */
+  .skills-2col { grid-template-columns: 1fr; }
+  .skills-2col-pane              { padding-right: 0; border-right: none; padding-bottom: 24px; border-bottom: 1px solid var(--border-lo); margin-bottom: 8px; }
+  .skills-2col-pane:last-child   { padding-left: 0; border-bottom: none; padding-bottom: 0; }
+}
+
+/* ── MOBILE (≤ 700px) ── */
+@media (max-width: 700px) {
+
+  /* Masquer la sidebar, retirer le margin-left */
+  body { margin-left: 0; }
+  .sidebar { transform: translateX(-100%); transition: transform .3s ease; }
+  .sidebar.open { transform: translateX(0); }
+
+  /* Afficher le bouton hamburger */
+  .hamburger { display: flex; }
+
+  .section-wrap { padding: 28px 18px 48px; }
+  .section-title { font-size: 36px; }
+  .detail-title  { font-size: 30px; }
+  .wb-title { font-size: 28px; }
+
+  /* CV */
+  .cv-header { flex-direction: column; align-items: flex-start; }
+  .cv-block-header { flex-direction: column; gap: 2px; }
+}

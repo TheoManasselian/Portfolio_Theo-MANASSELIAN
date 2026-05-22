@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtualisation réseau — Théo Manasselian</title>
+  <meta name="description" content="Projet virtualisation : simulation Cisco Packet Tracer, VLANs, routage inter-VLAN, Windows Server, Active Directory, DHCP, DNS, permissions NTFS.">
+  <link rel="icon" href="../img/Flavicon.png" type="image/png">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+<!-- ── TOPNAV ── -->
+<header class="top-nav">
+  <div class="top-nav-left">
+    <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
+    <div class="top-nav-brand"><span class="top-nav-brand-main">Théo Manasselian</span></div>
+  </div>
+  <div class="top-nav-right">
+    <button class="theme-btn" id="themeToggle" aria-label="Thème">
+      <img class="theme-icon-sun"  src="../img/Sun.png"  alt="">
+      <img class="theme-icon-moon" src="../img/Moon.png" alt="">
+    </button>
+  </div>
+</header>
+
+<!-- ── SIDEBAR ── -->
+<aside class="sidebar">
+  <nav class="sidebar-nav">
+    <p class="sidebar-section-label">Portfolio</p>
+    <a href="./index.html" class="menu-item"><span class="mi"><img src="../img/parcours.png"></span><span>Parcours</span></a>
+    <a href="./competences.html" class="menu-item"><span class="mi"><img src="../img/competence.png"></span><span>Compétences</span></a>
+    <details class="menu-group" open>
+      <summary class="menu-group-summary"><span class="mi"><img src="../img/projet.png"></span><a href="./projets.html">Projets</a></summary>
+        <details class="menu-group" open>
+          <summary class="menu-item"><span class="mi"><img src="../img/reseau.png"></span>Projets Réseux</summary>
+          <div class="menu-group-items">
+            <a href="./virtualisation.html"    class="menu-sub-item">Virtualisation</a>
+          </div>
+        </details>
+        <details class="menu-group">
+          <summary class="menu-item"><span class="mi"><img src="../img/dev.png"></span>Projets dev web</summary>
+          <div class="menu-group-items">
+            <a href="./isnotatalan.html"    class="menu-sub-item">IsNoTaTALAN</a>
+          </div>
+        </details>
+    </details>
+    <a href="./cv.html" class="menu-item"><span class="mi"><img src="../img/cv.png"></span><span>CV</span></a>
+  </nav>
+  <div class="sidebar-footer"><span class="sidebar-copy">© 2026 Théo Manasselian</span></div>
+</aside>
+
+<!-- ── CONTENU ── -->
+<main class="section-wrap">
+
+  <a href="./projets.html" class="back-link">← Retour aux projets</a>
+
+  <p class="detail-eyebrow">Déc. 2025 — en cours · Projet individuel ESIEA</p>
+  <h1 class="detail-title">Virtualisation réseau &amp; Windows Server</h1>
+
+  <div class="detail-blocks">
+
+    <!-- Bloc 1 : Camembert + Technologies -->
+    <div class="detail-block fade-in">
+      <div class="detail-block-img detail-img-center">
+        <img src="../img/Camembert_Packet-Tracer_VM.png" alt="Répartition des technologies">
+      </div>
+      <div class="detail-block-text">
+        <h4>Technologies utilisées</h4>
+        <div class="icon-grid" style="margin-bottom:14px;">
+          <div class="icon-card"><img src="../img/Cisco-Packet-Tracer.png" alt="Packet Tracer"><span>Packet Tracer</span></div>
+          <div class="icon-card"><img src="../img/Windows-Server.png"      alt="Win. Server"><span>Win. Server</span></div>
+          <div class="icon-card"><img src="../img/AD-DS.png"               alt="AD DS"><span>AD DS</span></div>
+          <div class="icon-card"><img src="../img/VMware.png"              alt="VMware"><span>VMware</span></div>
+          <div class="icon-card"><img src="../img/DHCP.png"               alt="DHCP"><span>DHCP</span></div>
+          <div class="icon-card"><img src="../img/DNS.png"                alt="DNS"><span>DNS</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bloc 2 : Screenshot Cisco + Réseau PT (inversé) -->
+    <div class="detail-block reverse fade-in">
+      <div class="detail-block-img">
+        <img src="../img/Cisco_1.png" alt="Topologie réseau Cisco Packet Tracer">
+      </div>
+      <div class="detail-block-text">
+        <h4>Réseau Cisco Packet Tracer</h4>
+        <span class="detail-label">Réseau 1 — 192.168.1.0</span>
+        <ul>
+          <li>Adressage IP géré dynamiquement par un <strong>serveur DHCP</strong></li>
+        </ul>
+        <span class="detail-label">Réseau 2 — 172.16.1.0</span>
+        <ul>
+          <li>Adressage géré par le routeur</li>
+          <li><strong>2 VLANs</strong> — OpenSpace1 et OpenSpace2</li>
+          <li><strong>Routage inter-VLAN</strong> configuré sur le routeur</li>
+          <li><strong>Serveur DNS</strong> servant d'annuaire réseau</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bloc 3 : Déploiement Windows Server -->
+    <div class="detail-block fade-in">
+      <div class="detail-block-img detail-block-empty"></div>
+      <div class="detail-block-text">
+        <h4>VM Windows Server</h4>
+        <span class="detail-label">Déploiement serveur</span>
+        <ul>
+          <li>Installation de <strong>Windows Server</strong> sous VMware</li>
+          <li>Création d'une forêt AD DS : <strong>TEST_foret_domain</strong></li>
+          <li><strong>DNS intégré</strong> à l'annuaire Active Directory</li>
+          <li>Création d'un <strong>dossier partagé</strong> pour les tests d'accès</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bloc 4 : Active Directory (inversé) -->
+    <div class="detail-block reverse fade-in">
+      <div class="detail-block-img detail-block-empty"></div>
+      <div class="detail-block-text">
+        <h4>Active Directory</h4>
+        <span class="detail-label">Structuration en lien avec les VLANs</span>
+        <ul>
+          <li>Une <strong>OU par VLAN</strong> — OpenSpace1, OpenSpace2, Administration…</li>
+          <li>Des <strong>groupes de sécurité</strong> correspondant à chaque zone</li>
+          <li>Des <strong>objets Ordinateur</strong> dans chaque OU pour simuler les postes clients</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bloc 5 : Permissions NTFS -->
+    <div class="detail-block fade-in">
+      <div class="detail-block-img detail-block-empty"></div>
+      <div class="detail-block-text">
+        <h4>Gestion des permissions NTFS</h4>
+        <span class="detail-label">Groupe DEV</span>
+        <ul>
+          <li>Lecture, modification et suppression sur les dossiers <strong>DEV</strong></li>
+          <li>Accès en <strong>lecture seule</strong> sur les fichiers Administration</li>
+        </ul>
+        <span class="detail-label">Groupe Administration</span>
+        <ul>
+          <li>Accès en <strong>lecture seule</strong> sur les fichiers DEV</li>
+          <li>Contrôle <strong>total</strong> sur les dossiers Administration</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<button class="back-to-top" id="backToTop" aria-label="Retour en haut"><img src="../img/arrow-up.png" alt="Flèche vers le haut"></button>
+<script src="../js/theme.js"></script>
+<script src="../js/animations.js"></script>
+<script src="../js/scroll.js"></script>
+<script src="../js/sidebar.js"></script>
+</body>
+</html>

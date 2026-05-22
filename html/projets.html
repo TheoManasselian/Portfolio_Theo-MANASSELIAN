@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projets — Théo Manasselian</title>
+  <meta name="description" content="Projets de Théo Manasselian : IsNoTaTALAN (jeu 2D HTML/CSS/JS) et projet virtualisation réseau Cisco Packet Tracer avec Windows Server et Active Directory.">
+  <link rel="icon" href="../img/Flavicon.png" type="image/png">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+<!-- ── TOPNAV ── -->
+<header class="top-nav">
+  <div class="top-nav-left">
+    <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
+    <div class="top-nav-brand"><span class="top-nav-brand-main">Théo Manasselian</span></div>
+  </div>
+  <div class="top-nav-right">
+    <button class="theme-btn" id="themeToggle" aria-label="Thème">
+      <img class="theme-icon-sun"  src="../img/Sun.png"  alt="">
+      <img class="theme-icon-moon" src="../img/Moon.png" alt="">
+    </button>
+  </div>
+</header>
+
+<!-- ── SIDEBAR ── -->
+<aside class="sidebar">
+  <nav class="sidebar-nav">
+    <p class="sidebar-section-label">Portfolio</p>
+    <a href="./index.html" class="menu-item"><span class="mi"><img src="../img/parcours.png"></span><span>Parcours</span></a>
+    <a href="./competences.html" class="menu-item"><span class="mi"><img src="../img/competence.png"></span><span>Compétences</span></a>
+    <details class="menu-group" open>
+      <summary class="menu-group-summary"><span class="mi"><img src="../img/projet.png"></span><a href="./projets.html">Projets</a></summary>
+        <details class="menu-group">
+          <summary class="menu-item"><span class="mi"><img src="../img/reseau.png"></span>Projets Réseux</summary>
+          <div class="menu-group-items">
+            <a href="./virtualisation.html"    class="menu-sub-item">Virtualisation</a>
+          </div>
+        </details>
+        <details class="menu-group">
+          <summary class="menu-item"><span class="mi"><img src="../img/dev.png"></span>Projets dev web</summary>
+          <div class="menu-group-items">
+            <a href="./isnotatalan.html"    class="menu-sub-item">IsNoTaTALAN</a>
+          </div>
+        </details>
+    </details>
+    <a href="./cv.html" class="menu-item"><span class="mi"><img src="../img/cv.png"></span><span>CV</span></a>
+  </nav>
+  <div class="sidebar-footer"><span class="sidebar-copy">© 2026 Théo Manasselian</span></div>
+</aside>
+
+<!-- ── CONTENU ── -->
+<main class="section-wrap">
+
+  <p class="section-eyebrow">Réalisations</p>
+  <h1 class="section-title">Projets</h1>
+
+  <div class="projects-list">
+
+    <!-- Projet 1 : IsNoTaTALAN -->
+    <article class="project-card fade-in">
+      <p class="project-eyebrow">Oct. 2025 — Fév. 2026 · Projet d'équipe ESIEA</p>
+      <h2 class="project-title">IsNoTaTALAN</h2>
+      <p class="project-desc">
+        Jeu 2D de labyrinthe procédural développé en équipe à l'ESIEA. Trois modes de jeu
+        (Normal, Infinity, Hardcore), génération procédurale à chaque partie, entièrement
+        réalisé en HTML, CSS et JavaScript sans framework ni moteur de jeu externe.
+      </p>
+      <div class="project-layout">
+        <div>
+          <div class="icon-grid" style="margin-bottom:14px;">
+            <div class="icon-card"><img src="../img/HTML5.png" alt="HTML5"><span>HTML5</span></div>
+            <div class="icon-card"><img src="../img/CSS3.png"  alt="CSS3"><span>CSS3</span></div>
+            <div class="icon-card"><img src="../img/JS.png"    alt="JS"><span>JavaScript</span></div>
+            <div class="icon-card"><img src="../img/GIT.png"   alt="Git"><span>Git</span></div>
+          </div>
+          <a href="./isnotatalan.html" class="project-link">Voir en détail →</a>
+        </div>
+        <div class="project-screenshot">
+          <img src="../img/TALAN_1.png" alt="IsNoTaTALAN — sélection de personnage">
+          <p class="project-screenshot-label">isnotatalan.fr</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- Projet 2 : Virtualisation -->
+    <article class="project-card fade-in">
+      <p class="project-eyebrow">Déc. 2025 — en cours · Projet individuel ESIEA</p>
+      <h2 class="project-title">Virtualisation réseau &amp; Windows Server</h2>
+      <p class="project-desc">
+        Infrastructure réseau complète simulée avec Cisco Packet Tracer (VLANs, routage
+        inter-VLAN, DHCP, DNS) couplée à un déploiement Windows Server avec Active Directory,
+        OUs, groupes de sécurité et permissions NTFS.
+      </p>
+      <div class="project-layout">
+        <div>
+          <div class="icon-grid" style="margin-bottom:14px;">
+            <div class="icon-card"><img src="../img/Cisco-Packet-Tracer.png" alt="Packet Tracer"><span>Packet Tracer</span></div>
+            <div class="icon-card"><img src="../img/Windows-Server.png"      alt="Win. Server"><span>Win. Server</span></div>
+            <div class="icon-card"><img src="../img/AD-DS.png"               alt="AD DS"><span>AD DS</span></div>
+            <div class="icon-card"><img src="../img/VMware.png"              alt="VMware"><span>VMware</span></div>
+          </div>
+          <a href="./virtualisation.html" class="project-link">Voir en détail →</a>
+        </div>
+        <div class="project-screenshot">
+          <img src="../img/Cisco_1.png" alt="Topologie Cisco Packet Tracer">
+          <p class="project-screenshot-label">Simulation réseau Cisco Packet Tracer</p>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</main>
+
+<button class="back-to-top" id="backToTop" aria-label="Retour en haut"><img src="../img/arrow-up.png" alt="Flèche vers le haut"></button>
+<script src="../js/theme.js"></script>
+<script src="../js/animations.js"></script>
+<script src="../js/scroll.js"></script>
+<script src="../js/sidebar.js"></script>
+</body>
+</html>
