@@ -41,7 +41,7 @@
     {
       id    : 'profil',
       label : 'Profil',
-      path  : 'html/index.html',
+      path  : 'html/profil.html',
       icon  : 'parcours'
     },
     {
