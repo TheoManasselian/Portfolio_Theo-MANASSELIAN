@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Profil -->
+  <url>
+    <loc>DOMAINE/html/index.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- CV -->
+  <url>
+    <loc>DOMAINE/html/cv.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Compétences Réseaux -->
+  <url>
+    <loc>DOMAINE/html/competences/competences_rsx.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>DOMAINE/html/competences/outils_rsx.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Compétences Dev -->
+  <url>
+    <loc>DOMAINE/html/competences/competences_dev.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>DOMAINE/html/competences/outils_dev.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Compétences Générales -->
+  <url>
+    <loc>DOMAINE/html/competences/competences_bureautiques.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Projets Réseaux -->
+  <url>
+    <loc>DOMAINE/html/projets_rsx/liste_projets_rsx.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>DOMAINE/html/projets_rsx/pkt-vm.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Projets Dev -->
+  <url>
+    <loc>DOMAINE/html/projets_dev/liste_projets_dev.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>DOMAINE/html/projets_dev/isnotatalan.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
