@@ -45,7 +45,7 @@ portfolio/
 │   └── projets/                                # Captures d'écran des projets
 │
 ├── README.txt
-├── index.html
+├── index.html                                  # Redirige vers profil.html : /html/profil.html
 ├── robots.txt
 └── sitemap.xml
 ```
