@@ -8,6 +8,9 @@ Portfolio personnel statique présentant mes compétences réseaux, mes compéte
 
 ```
 portfolio/
+├── .github/
+│   └── workflows/   
+│       └── static.yml
 ├── css/
 │   ├── base.css          # Variables, tokens de couleur, typographie, animation fadeUp
 │   ├── nav.css           # Top navbar, sidebar, menu items, hamburger mobile
@@ -17,7 +20,7 @@ portfolio/
 │   ├── animations.js     # Animations d'apparition au scroll (IntersectionObserver)
 │   └── scroll.js         # Bouton "retour en haut"
 ├── html/
-│   ├── index.html                              # Page Profil
+│   ├── profil.html                              # Page Profil
 │   ├── cv.html                                 # CV interactif
 │   ├── CV_THEO_MANASSELIAN.html                # Version imprimable / export PDF
 │   ├── competences/
@@ -36,6 +39,8 @@ portfolio/
 │   ├── ui/                                     # Icônes de navigation, photo de profil, favicon
 │   ├── logo/                                   # Logos des technologies
 │   └── projets/                                # Captures d'écran des projets
+├── README.txt
+├── index.html
 ├── robots.txt
 └── sitemap.xml
 ```
