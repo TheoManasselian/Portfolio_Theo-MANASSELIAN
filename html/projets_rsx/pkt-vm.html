@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PKT &amp; Virtualisation Réseau — Théo Manasselian</title>
+  <meta name="description" content="Projet virtualisation réseau : Cisco Packet Tracer, VLANs, Windows Server 2022, Active Directory, DHCP, DNS, permissions NTFS. ESIEA.">
+  <meta property="og:type"   content="website">
+  <meta property="og:title"  content="PKT &amp; Virtualisation — Théo Manasselian">
+  <meta property="og:locale" content="fr_FR">
+  <link rel="icon" href="../../img/ui/Flavicon.png" type="image/png">
+  <link rel="stylesheet" href="../../css/base.css">
+  <link rel="stylesheet" href="../../css/nav.css">
+  <link rel="stylesheet" href="../../css/components.css">
+</head>
+<body>
+
+<header class="top-nav">
+  <nav class="top-nav">
+    <div class="top-nav-left">
+        <div class="top-nav-logo">
+            <img src="../../img/ui/Flavicon.png" alt="logo">
+        </div>
+        <div class="top-nav-brand">
+            <span class="top-nav-brand-main">Théo Manasselian</span>
+        </div>
+    </div>
+  </nav>
+</header>
+
+<aside class="sidebar"></aside>
+
+<main class="section-wrap">
+
+  <a href="./liste_projets_rsx.html" class="back-link">← Retour aux projets Réseaux</a>
+
+  <span class="detail-eyebrow">Déc. 2025 — en cours · Projet individuel ESIEA</span>
+  <h1 class="detail-title">Virtualisation réseau &amp; Windows Server</h1>
+
+  <div class="detail-blocks">
+
+    <!-- Technologies -->
+    <div class="detail-block fade-in">
+      <div class="detail-block-img detail-img-center">
+        <img src="../../img/projets/Camembert_Packet-Tracer_VM.png" alt="Répartition des technologies">
+      </div>
+      <div class="detail-block-text">
+        <h4>Technologies utilisées</h4>
+        <div class="icon-grid" style="margin-bottom:16px;">
+          <div class="icon-card"><img src="../../img/logo/Cisco-Packet-Tracer.png" alt="Packet Tracer"><span>Packet Tracer</span></div>
+          <div class="icon-card"><img src="../../img/logo/Windows-Server.png"      alt="Win. Server"><span>Win. Server</span></div>
+          <div class="icon-card"><img src="../../img/logo/AD-DS.png"               alt="AD DS"><span>AD DS</span></div>
+          <div class="icon-card"><img src="../../img/logo/VMware.png"              alt="VMware"><span>VMware</span></div>
+          <div class="icon-card"><img src="../../img/logo/DHCP.png"                alt="DHCP"><span>DHCP</span></div>
+          <div class="icon-card"><img src="../../img/logo/DNS.png"                 alt="DNS"><span>DNS</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cisco PKT -->
+    <div class="detail-block reverse fade-in">
+      <div class="detail-block-img">
+        <img src="../../img/projets/Cisco_1.png" alt="Topologie réseau Cisco Packet Tracer">
+      </div>
+      <div class="detail-block-text">
+        <h4>Réseau Cisco Packet Tracer</h4>
+        <span class="detail-label">Réseau 1 — 192.168.1.0</span>
+        <ul>
+          <li>Adressage IP géré dynamiquement par un <strong>serveur DHCP</strong></li>
+        </ul>
+        <span class="detail-label">Réseau 2 — 172.16.1.0</span>
+        <ul>
+          <li>Adressage géré par le routeur</li>
+          <li><strong>2 VLANs</strong> — OpenSpace1 et OpenSpace2</li>
+          <li><strong>Routage inter-VLAN</strong> configuré sur le routeur</li>
+          <li><strong>Serveur DNS</strong> servant d'annuaire réseau</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- VM Windows Server -->
+    <div class="detail-block fade-in">
+      <div class="detail-block-empty"></div>
+      <div class="detail-block-text">
+        <h4>VM Windows Server</h4>
+        <span class="detail-label">Déploiement serveur</span>
+        <ul>
+          <li>Installation de <strong>Windows Server</strong> sous VMware</li>
+          <li>Création d'une forêt AD DS : <strong>TEST_foret_domain</strong></li>
+          <li><strong>DNS intégré</strong> à l'annuaire Active Directory</li>
+          <li>Création d'un <strong>dossier partagé</strong> pour les tests d'accès</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Active Directory -->
+    <div class="detail-block reverse fade-in">
+      <div class="detail-block-empty"></div>
+      <div class="detail-block-text">
+        <h4>Active Directory</h4>
+        <span class="detail-label">Structuration en lien avec les VLANs</span>
+        <ul>
+          <li>Une <strong>OU par VLAN</strong> — OpenSpace1, OpenSpace2, Administration…</li>
+          <li>Des <strong>groupes de sécurité</strong> correspondant à chaque zone</li>
+          <li>Des <strong>objets Ordinateur</strong> dans chaque OU pour simuler les postes clients</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Permissions NTFS -->
+    <div class="detail-block fade-in">
+      <div class="detail-block-empty"></div>
+      <div class="detail-block-text">
+        <h4>Gestion des permissions NTFS</h4>
+        <span class="detail-label">Groupe DEV</span>
+        <ul>
+          <li>Lecture, modification et suppression sur les dossiers <strong>DEV</strong></li>
+          <li>Accès en <strong>lecture seule</strong> sur les fichiers Administration</li>
+        </ul>
+        <span class="detail-label">Groupe Administration</span>
+        <ul>
+          <li>Accès en <strong>lecture seule</strong> sur les fichiers DEV</li>
+          <li>Contrôle <strong>total</strong> sur les dossiers Administration</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<button class="back-to-top" id="backToTop" aria-label="Retour en haut">↑</button>
+
+<script src="../../js/nav.js"></script>
+<script src="../../js/animations.js"></script>
+<script src="../../js/scroll.js"></script>
+</body>
+</html>

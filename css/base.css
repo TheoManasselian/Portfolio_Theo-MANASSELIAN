@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Jost:wght@300;400;500&display=swap');
+
+/* ── RESET ─────────────────────────────────────────────────── */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ── TOKENS ─────────────────────────────────────────────────── */
+:root {
+  --nav-h:     58px;
+  --sidebar-w: 224px;
+
+  /* Palette primaire — violet */
+  --p1: rgb(220,218,227);
+  --p2: rgb(177,172,194);
+  --p3: rgb(137,129,164);
+  --p4: rgb(103, 93,139);
+  --p5: rgb( 75, 63,116);
+
+  /* Palette secondaire 1 — mauve */
+  --s1-1: rgb(221,215,225);
+  --s1-2: rgb(181,167,190);
+  --s1-3: rgb(146,123,159);
+  --s1-4: rgb(117, 87,135);
+  --s1-5: rgb( 92, 57,113);
+
+  /* Palette secondaire 2 — bleu-violet */
+  --s2-1: rgb(216,219,225);
+  --s2-2: rgb(168,175,190);
+  --s2-3: rgb(125,136,159);
+  --s2-4: rgb( 89,104,135);
+  --s2-5: rgb( 60, 77,113);
+
+  /* Surfaces */
+  --bg:      #f5f4f8;
+  --surface: #ffffff;
+
+  /* Alias sémantiques */
+  --text:      var(--p5);
+  --text-soft: var(--p3);
+  --border:    var(--p2);
+  --border-lo: var(--p1);
+
+  /* Accent */
+  --accent:        var(--p4);
+  --accent-light:  rgba(103,93,139,.09);
+  --accent-border: var(--p2);
+
+  /* Forme */
+  --radius-sm: 8px;
+  --radius:    12px;
+  --radius-lg: 16px;
+
+  /* Ombre */
+  --shadow:    0 4px 20px rgba(75,63,116,.10);
+  --shadow-md: 0 8px 36px rgba(75,63,116,.14);
+
+  /* Transition */
+  --t: .18s ease;
+}
+
+/* ── BODY ────────────────────────────────────────────────────── */
+body {
+  font-family: 'Jost', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── LAYOUT PRINCIPAL ────────────────────────────────────────── */
+.section-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 36px;
+  animation: fadeUp .35s ease both;
+}
+
+/* ── TYPOGRAPHIE GLOBALE ─────────────────────────────────────── */
+.section-eyebrow {
+  font-size: 10px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--p3);
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 48px;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--p5);
+  margin-bottom: 36px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border-lo);
+}
+
+.body-text {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.9;
+  color: var(--p4);
+  margin-bottom: 20px;
+  letter-spacing: .2px;
+}
+
+/* ── ANIMATION ───────────────────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}
