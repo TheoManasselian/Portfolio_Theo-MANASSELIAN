@@ -23,7 +23,7 @@ portfolio/
 │   └── scroll.js         # Bouton "retour en haut"
 │
 ├── html/
-│   ├── profil.html                              # Page Profil
+│   ├── profil.html                             # Page Profil
 │   ├── cv.html                                 # CV interactif
 │   ├── CV_THEO_MANASSELIAN.html                # Version imprimable / export PDF
 │   ├── competences/
@@ -44,10 +44,10 @@ portfolio/
 │   ├── logo/                                   # Logos des technologies
 │   └── projets/                                # Captures d'écran des projets
 │
-├── README.txt
+├── README.txt                                  # Description du projet et instructions d'utilisation
 ├── index.html                                  # Redirige vers profil.html : /html/profil.html
-├── robots.txt
-└── sitemap.xml
+├── robots.txt                                  # Instructions pour les robots d'indexation (SEO)
+└── sitemap.xml                                 # Liste des pages du site pour les moteurs de recherche
 ```
 
 ---
