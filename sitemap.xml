@@ -3,7 +3,7 @@
 
   <!-- Profil -->
   <url>
-    <loc>DOMAINE/html/index.html</loc>
+    <loc>DOMAINE/html/profil.html</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
