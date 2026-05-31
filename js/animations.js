@@ -1,6 +1,4 @@
-/* =============================================================
-   animations.js — Animations au scroll (IntersectionObserver)
-   ============================================================= */
+/* animations.js — Animations au scroll (IntersectionObserver) */
 document.addEventListener('DOMContentLoaded', function () {
   var els = document.querySelectorAll('.fade-in');
   if (!els.length) return;

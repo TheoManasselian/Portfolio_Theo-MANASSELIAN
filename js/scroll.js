@@ -1,6 +1,4 @@
-/* =============================================================
-   scroll.js — Bouton retour en haut
-   ============================================================= */
+/* scroll.js — Bouton retour en haut */
 document.addEventListener('DOMContentLoaded', function () {
   var btn = document.getElementById('backToTop');
   if (!btn) return;
