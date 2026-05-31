@@ -1,8 +1,6 @@
-/* ══════════════════════════════════════════════════════════════
-   nav.css — Top bar + Sidebar (V8 esthétique · portfolio build)
-   ══════════════════════════════════════════════════════════════ */
+/* nav.css — Top bar + Sidebar (V8 esthétique · portfolio build) */
 
-/* ── TOP NAVBAR ─────────────────────────────────────────────── */
+/*  TOP NAVBAR  */
 .top-nav {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -26,7 +24,19 @@
   color: var(--p5); line-height: 1.1;
 }
 
-/* ── BOUTON HAMBURGER (mobile) ──────────────────────────────── */
+/* LOGO (lien vers profil) */
+.top-nav-logo {
+  width: 40px; height: 40px;
+  border-radius: 6px; overflow: hidden; border: 1px solid var(--border-lo);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  text-decoration: none;
+  transition: border-color var(--t), box-shadow var(--t);
+}
+.top-nav-logo:hover { border-color: var(--p2); box-shadow: var(--shadow); }
+.top-nav-logo img { width: 100%; height: 100%; object-fit: contain; }
+
+/* BOUTON HAMBURGER (mobile) */
 .hamburger {
   display: none;
   background: none;
@@ -43,7 +53,7 @@
 }
 .hamburger:hover { background: var(--p1); color: var(--p5); }
 
-/* ── SIDEBAR ────────────────────────────────────────────────── */
+/* SIDEBAR */
 .sidebar {
   position: fixed;
   top: var(--nav-h); left: 0; bottom: 0;
@@ -54,7 +64,7 @@
   flex-direction: column;
   z-index: 200;
   overflow: hidden;
-  transition: transform .3s ease;
+  transition: transform .28s cubic-bezier(.4,0,.2,1);
 }
 
 .sidebar-nav {
@@ -71,7 +81,7 @@
   color: var(--p2); padding: 10px 10px 5px; margin-top: 6px; flex-shrink: 0;
 }
 
-/* ── Item simple (liens <a>) ────────────────────────────────── */
+/* Item simple (liens <a>) */
 .menu-item {
   display: flex;
   align-items: center;
@@ -103,7 +113,7 @@
 .menu-item.active              { background: var(--p5); color: #fff; border-color: transparent; }
 .menu-item.active .mi img      { opacity: 1; filter: brightness(0) invert(1); }
 
-/* ── Groupe expandable <details> ────────────────────────────── */
+/* Groupe expandable <details> */
 details.menu-group { flex-shrink: 0; }
 
 details.menu-group > summary.menu-group-summary {
@@ -188,7 +198,7 @@ details[open].menu-group .menu-group-items {
 .menu-sub-item.active { color: var(--p5); font-weight: 400; }
 .menu-sub-item.active::before { background: var(--p5); opacity: 1; }
 
-/* ── FOOTER SIDEBAR ─────────────────────────────────────────── */
+/* FOOTER SIDEBAR */
 .sidebar-footer {
   padding: 12px 10px;
   border-top: 1px solid var(--border-lo);
@@ -199,13 +209,27 @@ details[open].menu-group .menu-group-items {
   text-align: center; padding: 4px; display: block;
 }
 
-/* ── DÉCALAGE BODY ──────────────────────────────────────────── */
+/* DÉCALAGE BODY */
 body {
   margin-top: var(--nav-h);
   margin-left: var(--sidebar-w);
 }
 
-/* ── RESPONSIVE ─────────────────────────────────────────────── */
+/* OVERLAY (mobile) */
+.sidebar-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(75,63,116,.35);
+  z-index: 199;
+  opacity: 0;
+  transition: opacity .28s ease;
+}
+.sidebar-overlay.visible {
+  opacity: 1;
+}
+
+/* RESPONSIVE */
 @media (max-width: 900px) {
   .hamburger { display: flex; }
 
@@ -217,6 +241,8 @@ body {
     transform: translateX(0);
     box-shadow: 4px 0 24px rgba(75,63,116,.18);
   }
+
+  .sidebar-overlay { display: block; }
 
   body {
     margin-left: 0;

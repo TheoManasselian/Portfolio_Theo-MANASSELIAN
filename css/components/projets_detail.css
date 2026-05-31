@@ -1,0 +1,93 @@
+/* components/projets_detail.css — Pages Détail de projet */
+
+/* RETOUR */
+.back-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 11px; font-weight: 400; letter-spacing: 1.5px; text-transform: uppercase;
+  color: var(--p3); text-decoration: none;
+  margin-bottom: 28px;
+  transition: color var(--t);
+}
+.back-link:hover { color: var(--p5); }
+
+/* EN-TÊTE DÉTAIL */
+.detail-eyebrow {
+  font-size: 9px; letter-spacing: 3px; text-transform: uppercase;
+  color: var(--p3); margin-bottom: 8px; display: block;
+}
+.detail-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 42px; font-weight: 300; font-style: italic;
+  color: var(--p5); margin-bottom: 36px;
+  padding-bottom: 24px; border-bottom: 1px solid var(--border-lo);
+  line-height: 1.1;
+}
+
+/* BLOCS CONTENU */
+.detail-blocks { display: flex; flex-direction: column; gap: 48px; }
+
+.detail-block {
+  display: flex; gap: 44px; align-items: flex-start;
+  padding-bottom: 48px;
+  border-bottom: 1px solid var(--border-lo);
+}
+.detail-block:last-child { border-bottom: none; padding-bottom: 0; }
+.detail-block.reverse { flex-direction: row-reverse; }
+
+.detail-block-img { flex: 1; min-width: 0; }
+.detail-block-img img {
+  width: 100%;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-lo);
+}
+.detail-img-center { display: flex; align-items: center; justify-content: center; }
+.detail-img-center img { max-width: 240px; border: none !important; }
+.detail-block-empty { flex: 1; }
+
+.detail-block-text { flex: 1; min-width: 240px; }
+.detail-block-text h4 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 24px; font-weight: 400; font-style: italic;
+  color: var(--p5); margin-bottom: 16px;
+}
+.detail-block-text p {
+  font-size: 13px; font-weight: 300; line-height: 1.8;
+  color: var(--p4); margin-bottom: 10px;
+}
+.detail-block-text ul { list-style: none; padding: 0; margin-bottom: 10px; }
+.detail-block-text ul li {
+  font-size: 13px; font-weight: 300; color: var(--p4); line-height: 1.75;
+  padding: 4px 0 4px 16px; position: relative;
+  border-bottom: 1px solid var(--border-lo);
+}
+.detail-block-text ul li:last-child { border-bottom: none; }
+.detail-block-text ul li::before   { content: '–'; position: absolute; left: 0; color: var(--p3); }
+.detail-block-text ul li strong    { font-weight: 500; color: var(--p5); }
+
+.detail-label {
+  display: block;
+  font-size: 9px; letter-spacing: 3px; text-transform: uppercase;
+  color: var(--p3); margin: 16px 0 6px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border-lo);
+}
+
+/* LIEN PROJET (partagé avec projets.css si détail seul) */
+.project-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 10px; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase;
+  color: var(--p4); border: 1px solid var(--border);
+  border-radius: var(--radius-sm); padding: 9px 20px; margin-top: 12px;
+  text-decoration: none;
+  transition: background var(--t), color var(--t), border-color var(--t);
+}
+.project-link:hover { background: var(--p5); color: #fff; border-color: var(--p5); }
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .detail-block,
+  .detail-block.reverse { flex-direction: column; }
+  .detail-block-empty { display: none; }
+  .detail-img-center img { max-width: 200px; }
+  .detail-title  { font-size: 32px; }
+}

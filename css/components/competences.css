@@ -1,0 +1,21 @@
+/* components/competences.css — Pages Compétences uniquement */
+
+/* SKILL DETAIL BLOCK */
+.skill-detail-block {
+  border: 1px solid var(--border-lo);
+  border-radius: var(--radius);
+  padding: 12px 18px;
+  margin-top: 10px;
+}
+.skill-detail-block li {
+  list-style: none;
+  font-size: 13px; font-weight: 300;
+  color: var(--p4); line-height: 1.75;
+  padding: 5px 0 5px 16px;
+  position: relative;
+  border-bottom: 1px solid var(--border-lo);
+  letter-spacing: .1px;
+}
+.skill-detail-block li:last-child { border-bottom: none; }
+.skill-detail-block li::before { content: '–'; position: absolute; left: 0; color: var(--p3); font-weight: 500; }
+.skill-detail-block li strong   { font-weight: 500; color: var(--p5); }
