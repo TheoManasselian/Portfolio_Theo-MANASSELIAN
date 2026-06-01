@@ -6,7 +6,7 @@
 /* TOKENS */
 :root {
   --nav-h:     58px;
-  --sidebar-w: 230px;
+  --sidebar-w: 240px;
 
   /* Palette primaire — violet */
   --p1: rgb(220,218,227);
