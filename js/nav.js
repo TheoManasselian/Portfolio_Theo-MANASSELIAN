@@ -80,13 +80,6 @@ CHANGER LE DOMAINE : modifier SITE.domain ci-dessous
       path : 'html/competences/competences_bureautiques.html',
       icon : 'competence'
     },
-
-    {
-      id : 'comp_ling',
-      label : 'Compétences Linguistiques',
-      path : 'html/competences/competences_linguistiques.html',
-      icon : 'drapeau'
-    },
     
     {
       id : 'projets_rsx',
