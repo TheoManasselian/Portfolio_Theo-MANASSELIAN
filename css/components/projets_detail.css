@@ -41,7 +41,7 @@
   border: 1px solid var(--border-lo);
 }
 .detail-img-center { display: flex; align-items: center; justify-content: center; }
-.detail-img-center img { max-width: 240px; border: none !important; }
+.detail-img-center img { border: 1px solid var(--border-lo); }
 .detail-block-empty { flex: 1; }
 
 .detail-block-text { flex: 1; min-width: 240px; }
