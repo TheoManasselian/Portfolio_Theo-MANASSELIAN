@@ -13,14 +13,14 @@ portfolio/
 │       └── static.yml
 │
 ├── css/
-│   ├── base.css          # Variables, tokens de couleur, typographie, animation fadeUp
-│   ├── nav.css           # Top navbar, sidebar, menu items, hamburger mobile
-│   └── components.css    # Tous les composants (cartes, icônes, timeline, CV, projets…)
+│   ├── base.css                                # Variables, tokens de couleur, typographie, animation fadeUp
+│   ├── nav.css                                 # Top navbar, sidebar, menu items, hamburger mobile
+│   └── components.css                          # Tous les composants (cartes, icônes, timeline, CV, projets…)
 │
 ├── js/
-│   ├── nav.js            # Génération de la sidebar + détection page active + hamburger
-│   ├── animations.js     # Animations d'apparition au scroll (IntersectionObserver)
-│   └── scroll.js         # Bouton "retour en haut"
+│   ├── nav.js                                  # Génération de la sidebar + détection page active + hamburger
+│   ├── animations.js                           # Animations d'apparition au scroll (IntersectionObserver)
+│   └── scroll.js                               # Bouton "retour en haut"
 │
 ├── html/
 │   ├── profil.html                             # Page Profil
@@ -75,7 +75,7 @@ Le projet utilise un système de design basé sur des variables CSS définies da
 
 ## Export PDF du CV
 
-Ouvrir `html/cv.html` et cliquer sur **Exporter en PDF**. La page `CV_THEO_MANASSELIAN.html` s'ouvre dans un nouvel onglet — utiliser `Ctrl+P` / `Cmd+P` et choisir *Enregistrer en PDF*.
+Ouvrir `html/cv.html` et cliquer sur **Exporter en PDF**. La page `CV_THEO_MANASSELIAN.html` s'ouvre dans un nouvel onglet — utiliser le bouton d'export en PDF ou faire `Ctrl+P` / `Cmd+P` et choisir *Enregistrer en PDF*.
 
 ---
 
