@@ -26,7 +26,11 @@
   color: var(--p4); margin-bottom: 20px;
 }
 .project-layout {
-  display: flex; gap: 28px; align-items: flex-start; flex-wrap: wrap;
+  display: flex; 
+  gap: 28px; 
+  align-items: center;
+  justify-content: space-around; 
+  flex-wrap: wrap;
 }
 .project-screenshot img {
   max-width: 260px; width: 100%;
