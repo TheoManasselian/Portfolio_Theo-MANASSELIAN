@@ -1,7 +1,7 @@
 /* components/projets.css — Pages Liste de projets */
 
 /* PROJETS — LIST */
-.projects-list { display: flex; flex-direction: column; gap: 20px; }
+.projects-list { display: flex; flex-direction: column; gap: 20px; padding-bottom: 40px; }
 
 .project-card {
   background: var(--surface);

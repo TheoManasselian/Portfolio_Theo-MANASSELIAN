@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carnet de comptes — Compte bancaire local | Théo Manasselian</title>
+  <meta name="description" content="Carnet de comptes : carnet de compte bancaire numérique en local. Serveur Node.js sans framework, JavaScript vanilla, stockage JSON mensuel sans base de données.">
+  <meta property="og:type"   content="website">
+  <meta property="og:title"  content="Carnet de comptes — Théo Manasselian">
+  <meta property="og:locale" content="fr_FR">
+  <link rel="icon" href="../../img/ui/Flavicon.png" type="image/png">
+  <link rel="stylesheet" href="../../css/base.css">
+  <link rel="stylesheet" href="../../css/nav.css">
+  <link rel="stylesheet" href="../../css/components/shared.css">
+  <link rel="stylesheet" href="../../css/components/projets.css">
+  <link rel="stylesheet" href="../../css/components/projets_detail.css">
+</head>
+<body>
+
+<header class="top-nav">
+  <nav class="top-nav">
+    <div class="top-nav-left">
+        <a class="top-nav-logo" href="#" aria-label="Retour au profil">
+            <img src="../../img/ui/Flavicon.png" alt="logo">
+        </a>
+        <div class="top-nav-brand">
+            <span class="top-nav-brand-main">Théo Manasselian</span>
+        </div>
+    </div>
+  </nav>
+</header>
+
+<aside class="sidebar"></aside>
+
+<main class="section-wrap">
+
+  <a href="./liste_projets_dev.html" class="back-link">← Retour aux projets Dev</a>
+
+  <span class="detail-eyebrow">2026 · Projet personnel</span>
+  <h1 class="detail-title">Carnet de comptes</h1>
+
+  <div class="detail-blocks">
+
+    <div class="detail-block fade-in">
+        <div class="detail-block-text">
+            <h4>Technologies utilisées</h4>
+            <div class="icon-grid" style="margin-bottom:16px;">
+            <div class="icon-card"><img src="../../img/logo/NODEJS.png" alt="Node.js"><span>Node.js</span></div>
+            <div class="icon-card"><img src="../../img/logo/JS.png"     alt="JavaScript"><span>JavaScript</span></div>
+            <div class="icon-card"><img src="../../img/logo/json.png"     alt="JSON"><span>JSON</span></div>
+            <div class="icon-card"><img src="../../img/logo/HTML5.png"  alt="HTML5"><span>HTML5</span></div>
+            <div class="icon-card"><img src="../../img/logo/CSS3.png"   alt="CSS3"><span>CSS3</span></div>
+            <div class="icon-card"><img src="../../img/logo/VScode.png" alt="VS Code"><span>VS Code</span></div>
+            </div>
+            <ul>
+            <li><strong>Node.js</strong> — Serveur local avec le module <code>http</code> natif, sans framework</li>
+            <li><strong>JavaScript</strong> — Logique de l'application et interface côté client</li>
+            <li><strong>HTML5 / CSS3</strong> — Structure et mise en forme de l'interface</li>
+            </ul>
+        </div>
+        <div class="detail-block-img detail-img-center">
+        <div style="display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 16px; font-size: 13px; color: var(--text-secondary);">
+            <span style="display: flex; align-items: center; gap: 6px;"><span style="width: 11px; height: 11px; border-radius: 2px; background: rgb(241,102,42);"></span>HTML 42.3%</span>
+            <span style="display: flex; align-items: center; gap: 6px;"><span style="width: 11px; height: 11px; border-radius: 2px; background: rgb(247,223,30);"></span>JavaScript 33.6%</span>
+            <span style="display: flex; align-items: center; gap: 6px;"><span style="width: 11px; height: 11px; border-radius: 2px; background: rgb(102,48,154);"></span>CSS 22.3%</span>
+            <span style="display: flex; align-items: center; gap: 6px;"><span style="width: 11px; height: 11px; border-radius: 2px; background: rgb(193,241,46);"></span>Batchfile 1.5%</span>
+            <span style="display: flex; align-items: center; gap: 6px;"><span style="width: 11px; height: 11px; border-radius: 2px; background: rgb(137,224,81);"></span>Shell 0.3%</span>
+        </div>
+        <div style="position: relative; width: 100%; height: 340px;">
+            <canvas id="langChart3" role="img" aria-label="Camembert de la répartition des langages : HTML 42.3%, JavaScript 33.6%, CSS 22.3%, Batchfile 1.5%, Shell 0.3%">Répartition des langages : HTML 42.3%, JavaScript 33.6%, CSS 22.3%, Batchfile 1.5%, Shell 0.3%.</canvas>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+        <script>
+        new Chart(document.getElementById('langChart3'), {
+            type: 'pie',
+            data: {
+            labels: ['HTML', 'JavaScript', 'CSS', 'Batchfile', 'Shell'],
+            datasets: [{
+                data: [42.3, 33.6, 22.3, 1.5, 0.3],
+                backgroundColor: ['rgb(241,102,42)', 'rgb(247,223,30)', 'rgb(102,48,154)', 'rgb(193,241,46)', 'rgb(137,224,81)'],
+                borderColor: getComputedStyle(document.documentElement).getPropertyValue('--surface-1') || '#fcfcfb',
+                borderWidth: 2
+            }]
+            },
+            options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            devicePixelRatio: Math.max(window.devicePixelRatio || 1, 3),
+            plugins: {
+                legend: { display: false },
+                tooltip: { callbacks: { label: (c) => c.label + ': ' + c.parsed + '%' } }
+            }
+            }
+        });
+        </script>
+        </div>
+    </div>
+
+    <div class="detail-block reverse fade-in">
+
+        <div class="detail-block-text">
+            <h4>Présentation du projet</h4>
+            <p>
+            Carnet de compte bancaire numérique fonctionnant entièrement en local sur la machine. L'application
+            sert de carnet familial : elle s'ouvre dans le navigateur via un petit serveur Node.js et ne dépend
+            d'aucun service en ligne ni d'aucune base de données externe.
+            </p>
+            <p>
+            Ce projet personnel m'a permis de construire un serveur Node.js de bout en bout sans framework :
+            gestion manuelle des routes, d'une petite API JSON et du service des fichiers statiques, avec une
+            persistance par fichiers pensée pour rester facile à sauvegarder et à transporter.
+            </p>
+        </div>
+        <div class="detail-block-img">
+            <img src="../../img/projets/CARNET_1.png" alt="Carnet de comptes — vue mensuelle">
+        </div>
+    </div>
+
+    <div class="detail-block fade-in">
+        <div class="detail-block-text">
+            <h4>Fonctionnalités</h4>
+            <ul>
+            <li><strong>API maison</strong> — routes GET / POST pour lire et écrire les données du mois</li>
+            <li><strong>Vue mensuelle</strong> — un sélecteur permet de naviguer d'un mois à l'autre</li>
+            <li><strong>Stockage local</strong> — un fichier JSON par mois dans le dossier <code>data/</code></li>
+            <li><strong>Nouveau mois automatique</strong> — le fichier du mois courant est créé au démarrage</li>
+            <li><strong>Portable</strong> — copier le dossier suffit pour changer de PC</li>
+            </ul>
+            <a href="https://github.com/TheoManasselian/Carnet_comptes" target="_blank" rel="noopener" class="project-link" style="margin-top:20px;">
+            Voir le code →
+            </a>
+        </div>
+        <div class="detail-block-img">
+            <img src="../../img/projets/CARNET_2.png" alt="Carnet de comptes — navigation entre les mois">
+        </div>
+    </div>
+
+  </div>
+</main>
+
+<button class="back-to-top" id="backToTop" aria-label="Retour en haut">↑</button>
+
+<script src="../../js/nav.js"></script>
+<script src="../../js/animations.js"></script>
+<script src="../../js/scroll.js"></script>
+</body>
+</html>
