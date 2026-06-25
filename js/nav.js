@@ -116,8 +116,12 @@ CHANGER LE DOMAINE : modifier SITE.domain ci-dessous
           id: 'isnotatalan', 
           label: 'IsNoTaTALAN',        
           path: 'html/projets_dev/isnotatalan.html'       
+        },
+        { 
+          id: 'carnet_comptes', 
+          label: 'Carnet de comptes',        
+          path: 'html/projets_dev/carnet_comptes.html'       
         }
-        // { id: 'dev2', label: 'Projet Dev 2', path: 'html/projets_dev/projet2.html' }
       ]
     },
 

@@ -7,6 +7,9 @@
   color: var(--p3); text-decoration: none;
   margin-bottom: 28px;
   transition: color var(--t);
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 10px;
 }
 .back-link:hover { color: var(--p5); }
 
