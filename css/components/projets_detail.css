@@ -43,6 +43,19 @@
   border-radius: var(--radius);
   border: 1px solid var(--border-lo);
 }
+
+.camambert { 
+  display : flex;
+  flex: 1;
+  min-width: 0;
+  width: 100%;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-lo);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .detail-img-center { display: flex; align-items: center; justify-content: center; }
 .detail-img-center img { border: 1px solid var(--border-lo); }
 .detail-block-empty { flex: 1; }
