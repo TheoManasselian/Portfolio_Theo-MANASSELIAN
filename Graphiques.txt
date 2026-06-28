@@ -1,1 +1,3 @@
+site utilisé pour faire les graphiques en camambert.
+
 https://www.vmaths.fr/apps/generateur-diagrammes-camembert-canvas.html
