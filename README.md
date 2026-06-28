@@ -37,7 +37,8 @@ portfolio/
 │   │   └── pkt-vm.html                         # Détail : Virtualisation & Windows Server
 │   └── projets_dev/
 │       ├── liste_projets_dev.html              # Liste des projets Dev
-│       └── isnotatalan.html                    # Détail : IsNoTaTALAN
+│       ├── isnotatalan.html                    # Détail : IsNoTaTALAN
+│       └── carnet_comptes.html                 # Détail : Carnet
 │
 ├── img/
 │   ├── ui/                                     # Icônes de navigation, photo de profil, favicon
